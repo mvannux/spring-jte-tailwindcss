@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 
-@Configuration
+//@Configuration
 public class JteConfig {
   @Bean
   public ViewResolver jteViewResolve(TemplateEngine templateEngine) {

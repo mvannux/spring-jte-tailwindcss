@@ -29,21 +29,29 @@
   </scm>
   <properties>
     <java.version>22</java.version>
+    <jte.version>3.1.15</jte.version>
   </properties>
   <dependencies>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
     <dependency>
       <groupId>gg.jte</groupId>
       <artifactId>jte</artifactId>
-      <version>3.1.12</version>
+      <version>${jte.version}</version>
     </dependency>
     <dependency>
       <groupId>gg.jte</groupId>
       <artifactId>jte-spring-boot-starter-3</artifactId>
-      <version>3.1.12</version>
+      <version>${jte.version}</version>
     </dependency>
 
     <dependency>
@@ -52,6 +60,7 @@
       <scope>runtime</scope>
       <optional>true</optional>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-configuration-processor</artifactId>
@@ -74,7 +83,7 @@
       <plugin>
         <groupId>gg.jte</groupId>
         <artifactId>jte-maven-plugin</artifactId>
-        <version>3.1.12</version>
+        <version>${jte.version}</version>
         <configuration>
           <workingDirectory>src/main/frontend</workingDirectory>
         </configuration>

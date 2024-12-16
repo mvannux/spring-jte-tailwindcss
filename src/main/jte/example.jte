@@ -1,4 +1,6 @@
 @import com.example.java_jte.Page
+<%-- @import gg.jte.generated.precompiled.components --%>
+<%-- @import button.button --%>
 
 @param Page page
 
@@ -12,6 +14,8 @@
 <body class="bg-slate-50">
     <div class="text-xl font-medium text-black">${page.title()}</div>
     <p>Welcome to my example page!</p>
+
+@template.components.button("Cliccami")
 
     <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center gap-x-4">
       <div class="shrink-0">
